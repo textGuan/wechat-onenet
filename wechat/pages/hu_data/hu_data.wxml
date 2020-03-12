@@ -1,0 +1,14 @@
+<!--pages/hu_data/hu_data.wxml-->
+<view class="title">湿度数据详情页</view>
+<view class="box">
+  <view class="one">
+    <view class="time">时间</view>
+    <view class="data">数值</view>
+    <view class="unit">单位</view>
+  </view>
+  <view class="one" wx:for="{{dataList}}">
+    <view class="time">{{item.time}}</view>
+    <view class="data">{{item.data}}</view>
+    <view class="unit">{{item.unit}}</view>
+  </view>
+</view>

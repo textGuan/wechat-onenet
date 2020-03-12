@@ -1,0 +1,40 @@
+<!--pages/data/data.wxml-->
+<view class="apptitle">
+  点击具体数据查看历史数据流。
+</view>
+
+<view class="box">
+  <view class="dataonline">
+    <view class="olstatus">{{equipid}} {{online}}</view>
+  </view>
+  <view class="datashow" bindtap="te_data" style="border: {{color1}} solid 1px;">
+    <view class="title">{{name[0].title}}</view>
+    <view class="num">{{name[0].data}}</view>
+    <view class="unit">{{name[0].unit}}</view>
+  </view>
+  <view class="datashow" bindtap="hu_data" style="border: {{color2}} solid 1px;">
+    <view class="title">{{name[1].title}}</view>
+    <view class="num">{{name[1].data}}</view>
+    <view class="unit">{{name[1].unit}}</view>
+  </view>
+  <view class="datashow" bindtap="li_data" style="border: {{color3}} solid 1px;">
+    <view class="title">{{name[2].title}}</view>
+    <view class="num">{{name[2].data}}</view>
+    <view class="unit">{{name[2].unit}}</view>
+  </view>
+  <view class="acctitle">加速度</view>
+  <view class="datashow" bindtap="acc_data" style="border: {{color4}} solid 1px;">
+    <view class="acc">X: {{accx}}</view>
+    <view class="acc">Y: {{accy}}</view>
+    <view class="acc">Z: {{accz}}</view>
+  </view>
+</view>
+
+<view class="infobox">
+  <view class="infoboxtitle">设备激活情况</view>
+  <view wx:for="{{status}}" class="info">
+    <view class="statusinfo">{{item.code}}</view>
+    <view class="statusinfo">{{item.name}}</view>
+    <view class="statusinfo">{{item.status}}</view>
+  </view>
+</view>

@@ -1,0 +1,60 @@
+<!--pages/button/button.wxml-->
+<view class="pagetitle">控制页面</view>
+<view class="box">
+  <view class="one">
+    <view class="name">Red Led</view>
+    <view class="status" wx:if="{{redledstatus}}">开</view>
+    <view class="status" wx:else>关</view>
+    <switch class="switch_s" type="switch" checked="{{redledstatus}}" color="#00ff00" bindchange="redledchange"></switch>
+  </view>
+  <view class="one">
+    <view class="name">Yellow Led</view>
+    <view class="status" wx:if="{{yellowledstatus}}">开</view>
+    <view class="status" wx:else>关</view>
+    <switch class="switch_s" type="switch" checked="{{yellowledstatus}}" color="#00ff00" bindchange="yellowledchange"></switch>
+  </view>
+  <view class="one">
+    <view class="name">Blue Led</view>
+    <view class="status" wx:if="{{blueledstatus}}">开</view>
+    <view class="status" wx:else>关</view>
+    <switch class="switch_s" type="switch" checked="{{blueledstatus}}" color="#00ff00" bindchange="blueledchange"></switch>
+  </view>
+  <view class="one">
+    <view class="name">Green Led</view>
+    <view class="status" wx:if="{{greenledstatus}}">开</view>
+    <view class="status" wx:else>关</view>
+    <switch class="switch_s" type="switch" checked="{{greenledstatus}}" color="#00ff00" bindchange="greenledchange"></switch>
+  </view>
+  <view class="one">
+    <view class="name">Beep</view>
+    <view class="status" wx:if="{{beepstatus}}">开</view>
+    <view class="status" wx:else>关</view>
+    <switch class="switch_s" type="switch" checked="{{beepstatus}}" color="#00ff00" bindchange="beepchange"></switch>
+  </view>
+  <view class="one">
+    <view class="name">一键开关</view>
+    <view class="status" wx:if="{{allstatus}}">全关</view>
+    <view class="status" wx:else>全开</view>
+    <switch class="switch_s" type="switch" checked="{{allstatus}}" color="#0000ff" bindchange="allchange"></switch>
+  </view>
+</view>
+
+<view class="settime">
+<view class="pickerinfo">选择时间</view>
+<picker class="datepicker" mode="date" value="{{cur_date}}" start="{{today}}" end="2099-12-31" bindchange="changeDate">{{cur_date}}</picker>
+<picker class="timepicker" mode="time" value="{{cur_time}}" start="{{start_time}}" end="23:59" bindchange="changeTime">{{cur_time}}</picker>
+
+  <switch class='switch_p' type="switch" checked="{{pickerctl}}" color="#00ff00" bindchange="pickerchange"></switch>
+
+  <view class="pickerinfo" wx:if="{{pickerctl}}">选择需要关的对象</view>
+  <view class="pickerinfo" wx:else>选择需要开的对象</view>
+  <button class='pickereqbtn' style="background-color:{{rbtncolor}}" bindtap="redbtn">Red Led</button>
+  <button class='pickereqbtn' style="background-color:{{ybtncolor}}" bindtap="yellowbtn">Yellow Led</button>
+  <button class='pickereqbtn' style="background-color:{{gbtncolor}}" bindtap="greenbtn">Green Led</button>
+  <button class='pickereqbtn' style="background-color:{{bbtncolor}}" bindtap="bluebtn">Blue Led</button>
+  <button class='pickereqbtn' style="background-color:{{beepbtncolor}}" bindtap="beepbtn">Beep</button>
+  <view class="btns">
+   <button class="pickerbtn" bindtap="submit">提交</button>
+    <button class="pickerbtn" bindtap="undo">撤销</button> 
+  </view>
+</view>

@@ -1,0 +1,46 @@
+/* pages/te_data/te_data.wxss */
+.title{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+
+.box{
+  margin: 0 auto;
+  margin-bottom: 20rpx;
+  height: 1150rpx;
+  width: 80%;
+  border: black solid 1px;
+  align-items: center;
+  border-radius: 20rpx;
+}
+
+.box .one{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  height: 80rpx;
+  /* border: #aaaaff solid 1px; */
+  line-height:80rpx;
+  margin-top: 20rpx;
+  border-radius: 10px;
+}
+
+.box .one .data{
+  width: 40%;
+  text-align: center;
+  margin: 0 auto
+}
+
+.box .one .time{
+  width: 40%;
+  text-align: center;
+  margin: 0 auto
+}
+
+.box .one .unit{
+  width: 20%;
+  text-align: center;
+  margin: 0 auto
+}

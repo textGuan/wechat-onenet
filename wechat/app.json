@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/data/data",
+    "pages/button/button",
+    "pages/setting/setting",
+    "pages/hu_data/hu_data",
+    "pages/te_data/te_data",
+    "pages/acc_data/acc_data",
+    "pages/light_data/light_data"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "OneNet-微信小程序",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/data/data",
+      "text": "Data",
+      "badge":""
+    },
+    {
+      "pagePath": "pages/button/button",
+      "text": "Control",
+      "badge": ""
+    },
+    {
+      "pagePath": "pages/setting/setting",
+      "text": "Setting",
+      "badge": ""
+    }],
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "selectedColor": "#07c160"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

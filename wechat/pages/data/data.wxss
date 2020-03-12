@@ -1,0 +1,108 @@
+/* pages/data/data.wxss */
+.apptitle{
+  width: 100%;
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.box{
+  margin: 0 auto;
+  margin-bottom: 20rpx;
+  height: 620rpx;
+  width: 80%;
+  border: black solid 1px;
+  align-items: center;
+  border-radius: 20rpx;
+}
+
+.box .dataonline{
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 20rpx;
+  height: 100rpx;
+  width: 80%;
+  line-height: 100rpx;
+}
+
+.box .dataonline .olstatus{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.box .datashow{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  height: 80rpx;
+  /* border: #aaaaff solid 1px; */
+  line-height:80rpx;
+  margin-top: 20rpx;
+  border-radius: 10px;
+}
+
+.box .datashow .title{
+  width: 40%;
+  text-align: center;
+  margin: 0 auto; 
+}
+
+.box .datashow .data{
+  width:40%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.box .datashow .unit{
+  width:20%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.box .acctitle{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  height: 80rpx;
+  line-height:80rpx;
+  margin-top: 5rpx;
+}
+
+.box .datashow .acc{
+  margin: 0 auto;
+  line-height:80rpx;
+}
+
+.infobox{
+  margin: 0 auto;
+  margin-bottom: 30rpx;
+  height: 570rpx;
+  width: 80%;
+  border: black solid 1px;
+  align-items: center;
+  border-radius: 20rpx;
+}
+
+.infobox .infoboxtitle{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  height: 80rpx;
+  line-height:80rpx;
+  margin-top: 5rpx;
+}
+
+.infobox .info{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  height: 80rpx;
+  line-height:80rpx;
+}
+
+.infobox .info .statusinfo{
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+  line-height:80rpx;
+}

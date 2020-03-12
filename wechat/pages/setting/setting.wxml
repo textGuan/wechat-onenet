@@ -1,0 +1,14 @@
+<!--pages/setting/setting.wxml-->
+<view class="title">我的设备列表,点选操作对应的设备</view>
+<view class="box">
+  <view class="one">
+    <view class="id">ID</view>
+    <view class="name">Name</view>
+    <view class="status">Status</view>
+  </view>
+  <view class="one" wx:for="{{equipList}}">
+    <view class="id">{{item.id}}</view>
+    <view class="name">{{item.name}}</view>
+    <view class="status">{{item.status}}</view>
+  </view>
+</view>

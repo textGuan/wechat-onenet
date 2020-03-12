@@ -1,0 +1,16 @@
+<!--pages/acc_data/acc_data.wxml-->
+<view class="title">加速度数据详情页</view>
+<view class="box">
+  <view class="one">
+    <view class="time">时间</view>
+    <view class="data">X数值</view>
+    <view class="data">Y数值</view>
+    <view class="data">Z数值</view>
+  </view>
+  <view class="one" wx:for="{{dataList}}">
+    <view class="time">{{item.time}}</view>
+    <view class="data">{{item.datax}}</view>
+    <view class="data">{{item.datay}}</view>
+    <view class="data">{{item.dataz}}</view>
+  </view>
+</view>
