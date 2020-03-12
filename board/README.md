@@ -1,0 +1,3 @@
+首先修改APIKEY和DEVID
+
+修改wifi名称和密码
