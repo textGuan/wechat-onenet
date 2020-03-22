@@ -1,4 +1,9 @@
 # wechat-onenet
+
+board目录为开发板代码
+
+wechat目录为小程序代码
+
 使用微信小程序和中移OneNet平台实现对开发板的控制
 
 docx文件是尽可能完整的教程……
